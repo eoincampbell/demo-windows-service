@@ -1,6 +1,6 @@
 ﻿namespace DemoWindowsService
 {
-    partial class DemoService
+    partial class DemoWindowsService
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,10 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            this.ServiceName = "DemoService";
+            this.MainTimer = new System.Timers.Timer();
+            ((System.ComponentModel.ISupportInitialize)(this.MainTimer)).BeginInit();
+            // 
+            // MainTimer
+            // 
+            this.MainTimer.Elapsed += new System.Timers.ElapsedEventHandler(this.MainTimer_Elapsed);
+            // 
+            // DemoWindowsService
+            // 
+            this.ServiceName = "DemoWindowsService";
+            ((System.ComponentModel.ISupportInitialize)(this.MainTimer)).EndInit();
+
         }
 
         #endregion
+
+        private System.Timers.Timer MainTimer;
     }
 }

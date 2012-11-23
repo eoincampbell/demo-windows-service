@@ -1,4 +1,6 @@
-﻿namespace DemoWindowsService
+﻿using System.ServiceProcess;
+
+namespace DemoWindowsService
 {
     partial class ProjectInstaller
     {
@@ -38,7 +40,8 @@
             // 
             // serviceInstaller1
             // 
-            this.serviceInstaller1.ServiceName = "DemoService";
+            this.serviceInstaller1.ServiceName = "DemoWindowsService";
+            this.serviceInstaller1.StartType = ServiceStartMode.Automatic;
             // 
             // ProjectInstaller
             // 
