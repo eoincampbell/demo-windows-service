@@ -1,0 +1,8 @@
+This project relates to blog post I wrote at 
+
+http://trycatch.me/net-windows-services-tips-tricks/
+
+##############################################################################################################
+
+The purpose of this solution is to demonstrate some helpful tips and tricks such as Interactive & Debugger based
+service Launch & Self Managed Installation.
